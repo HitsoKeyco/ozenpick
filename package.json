@@ -1,0 +1,64 @@
+{
+  "name": "@hitsokeyco/ozenpick",
+  "version": "0.1.11",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "description": "A modern React UI component library",
+  "author": "Sergio <sergio@ozenpick.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tu-usuario/ozenpick.git"
+  },
+  "keywords": [
+    "react",
+    "component-library",
+    "ui",
+    "vite",
+    "typescript",
+    "styled"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./dist/ozenpick.css": {
+      "import": "./dist/ozenpick.css",
+      "require": "./dist/ozenpick.css"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "tsc -p tsconfig.dev.json --watch & vite",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "eslint": "^9.22.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1",
+    "vite-plugin-dts": "^3.7.3"
+  }
+}
