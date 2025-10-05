@@ -1,0 +1,81 @@
+.ozenpick-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.ozenpick-input-container.full-width {
+    width: 100%;
+}
+
+.ozenpick-input-label {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.ozenpick-input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.ozenpick-input:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.ozenpick-input.error {
+    border-color: #d32f2f;
+}
+
+.ozenpick-input.error:focus {
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+}
+
+.ozenpick-input-error {
+    color: #d32f2f;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.ozenpick-input-helper {
+    color: #666;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+/* Variantes */
+.ozenpick-input.outlined {
+    background-color: transparent;
+}
+
+.ozenpick-input.filled {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+}
+
+.ozenpick-input.filled:focus {
+    background-color: #fafafa;
+}
+
+/* Tamaños */
+.ozenpick-input.small {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.ozenpick-input.medium {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.ozenpick-input.large {
+    padding: 1rem 1.25rem;
+    font-size: 1.125rem;
+}

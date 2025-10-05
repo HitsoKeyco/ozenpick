@@ -33,6 +33,7 @@
         "**/*.test.ts",
         "**/*.test.tsx",
         "src/main.tsx",
-        "src/App.tsx"
+        "src/App.tsx",
+        "src/stories/**/*"
     ]
 }
